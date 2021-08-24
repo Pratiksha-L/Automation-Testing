@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login with correct credentials navigate user to Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Recommendation Page gives title 'Nifty Recommendations']]>
+    </line>
+    <line>
+      <![CDATA[Saving a recommended stock shows success message]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-08-24T11:16:54 IST" name="Default suite" finished-at="2021-08-24T11:17:14 IST" duration-ms="19314">
+    <groups>
+    </groups>
+    <test started-at="2021-08-24T11:16:54 IST" name="Default test" finished-at="2021-08-24T11:17:14 IST" duration-ms="19314">
+      <class name="com.citibridge.VerifyRecommendationPageFunctinality">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.citibridge.VerifyRecommendationPageFunctinality@101952da]" started-at="2021-08-24T11:16:54 IST" name="launchBrowser" finished-at="2021-08-24T11:16:58 IST" duration-ms="3260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySuccessfulLogin()[pri:0, instance:com.citibridge.VerifyRecommendationPageFunctinality@101952da]" started-at="2021-08-24T11:16:58 IST" name="verifySuccessfulLogin" finished-at="2021-08-24T11:17:07 IST" duration-ms="9602" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login with correct credentials navigate user to Dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method signature="verifyRecommendationTitle()[pri:1, instance:com.citibridge.VerifyRecommendationPageFunctinality@101952da]" started-at="2021-08-24T11:17:07 IST" name="verifyRecommendationTitle" finished-at="2021-08-24T11:17:10 IST" depends-on-methods="com.citibridge.VerifyRecommendationPageFunctinality.verifySuccessfulLogin" duration-ms="3182" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Recommendation Page gives title 'Nifty Recommendations']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRecommendationTitle -->
+        <test-method signature="verifyAddSavedStocks()[pri:2, instance:com.citibridge.VerifyRecommendationPageFunctinality@101952da]" started-at="2021-08-24T11:17:10 IST" name="verifyAddSavedStocks" finished-at="2021-08-24T11:17:13 IST" depends-on-methods="com.citibridge.VerifyRecommendationPageFunctinality.verifyRecommendationTitle" duration-ms="2430" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Saving a recommended stock shows success message]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddSavedStocks -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:com.citibridge.VerifyRecommendationPageFunctinality@101952da]" started-at="2021-08-24T11:17:13 IST" name="terminateBrowser" finished-at="2021-08-24T11:17:14 IST" duration-ms="805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.citibridge.VerifyRecommendationPageFunctinality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
